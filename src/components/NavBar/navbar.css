@@ -1,0 +1,44 @@
+a{
+     text-decoration: none;
+     color: inherit;
+     margin: 0px 10px;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.logoContainer{
+     margin-right: 5%;
+}
+
+.navLinks{
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+}
+
+.navButton{
+     background-color: transparent;
+     border: none;
+    
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+}
+
+.navIcon{
+     font-size:1.5rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+@media screen and (min-width:768px) {
+     .navButton{
+          display: none;
+     }
+}

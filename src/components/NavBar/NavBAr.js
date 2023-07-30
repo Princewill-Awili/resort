@@ -12,8 +12,12 @@ const NavBAr = () => {
      </div>
      <div className="navLinks">
           <button type='button'className='navButton'>
-               <NavIcon/>
+               <NavIcon className='navIcon'/>
           </button>
+          <ul className="navList">
+               <Link to='/'>Home</Link>
+               <Link to='/rooms'>Rooms</Link>
+          </ul>
      </div>
     </div>
   )
