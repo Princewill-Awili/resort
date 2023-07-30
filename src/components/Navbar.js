@@ -15,21 +15,23 @@ const Navbar = () => {
 
 
   return (
-    <nav className="navbar">
-     <div className="nav-center">
-          <div className="nav-header">
-               <Link to="/">
-                    <img src={logo} alt='logo'/>
-               </Link>
-          </div>
-          <FaAlignRight className='nav-icon' onClick={handleToggle}/>
-
-          <ul className={isOpen ? "nav-links show-nav":"nav-links"}>
-               <Link to='/'>Home</Link>
-          </ul>
-     </div>
+    <nav className='navbar'>
+      <div className='nav-center'>
+        <div className='nav-header'>
+          <Link to='/'>
+            <img src={logo} alt='logo' />
+          </Link>
+          <button className='nav-btn' type='button'>
+            <FaAlignRight className='nav-icon' onClick={handleToggle} />
+          </button>
+        </div>
+        <ul className={isOpen ? "nav-links show-nav" : "nav-links"}>
+          <Link to='/'>Home</Link>
+          <Link to='/rooms'>Rooms</Link>
+        </ul>
+      </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar

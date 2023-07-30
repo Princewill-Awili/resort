@@ -6,14 +6,15 @@ import Home from './pages/Home'
 import Rooms from "./pages/Rooms";
 import SingleRoomPage from "./pages/SingleRoomPage";
 import ErrorPage from "./pages/ErrorPage";
-import Navbar from "./components/Navbar";
+//import Navbar from "./components/Navbar";
+import NavBAr from "./components/NavBar/NavBAr";
 
 
 const App = () => {
 
   return (
     <>
-      <Navbar/>
+      <NavBAr/>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/rooms/' element={<Rooms />} />
